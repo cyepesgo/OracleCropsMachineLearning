@@ -1,0 +1,18 @@
+//Cuando hay una amenaza en una de la camas, es decir, esAmenaza pasa a ser activo por el ph o la conductividad electrica, se envia un email:
+
+if (me.esAmenaza){
+    
+var params = {
+	cc: undefined /* STRING */,
+	bcc: undefined /* STRING */,
+	subject: "Alerta, hay una amenaza en su cultivo" /* STRING */,
+	from: "oraclecrops@gmail.com" /* STRING */,
+	to: "ahreyes150@gmail.com"/* STRING */,
+    body: "<h1 style=color:green;>Oracle Crops </h1>"+"<h1>Alerta!</h1>"+"<p>La cantidad de ph es: "+Things["Cama1_pit"].ph+" y la cantidad de conductividad electrica es: "+Things["Cama1_pit"].conductividadElectrica+"</p>"+"<p> Por favor tome las medidas necesarias.</p><p>Att. Flores Rio Negro</p>" /* HTML */
+};
+
+// no return
+Things["MailServer_pit"].SendMessage(params);
+
+
+}

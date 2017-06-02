@@ -1,0 +1,7 @@
+//Si el ph esta fuera del rango permitdo, el ph se convierte en una amenaza, por lo que desencadena un estado genereal de la cama el cual indica que la cama esta en amenaza activando esAmenaza a verddero:
+
+if (me.phAmenaza){
+    me.esAmenaza = "true"
+}else{
+    me.esAmenaza = "false"
+}

@@ -1,0 +1,19 @@
+//Leer CSV del repositorio:
+
+var params = {
+	path: "prediccion.csv" /* STRING */,
+	columnMappings: "ce;;" /* STRING */,
+	hasHeader: "false" /* BOOLEAN */,
+	longitudeField: undefined /* NUMBER */,
+	dateFormat: undefined /* STRING */,
+	fileRepository: "OracleCropsFileRepo_pit" /* THINGNAME */,
+	latitudeField: undefined /* NUMBER */,
+	fieldDelimiter: "," /* STRING */,
+	stringDelimiter: undefined /* STRING */,
+	dataShape: "OracleCropsPrediccionShape_pit" /* DATASHAPENAME */
+};
+
+// result: INFOTABLE
+var result = Resources["CSVParserFunctions"].ReadCSVFile(params);
+
+
