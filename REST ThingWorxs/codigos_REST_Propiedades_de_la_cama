@@ -1,0 +1,127 @@
+//Estos son los codigos para realizar la conexion con thingowrx y colocar los valores de cada propiedad de las camas:
+
+//ph:
+
+import requests
+
+url = "http://molpe.eafit.edu.co:8080/Thingworx/Things/Cama1_pit/Properties/ph"
+
+payload = "{\n\t\"ph\": \"7.5\"\n}"
+headers = {
+    'appkey': "89a96c8d-506f-470e-baa1-6beedde22406",
+    'content-type': "application/json",
+    'cache-control': "no-cache",
+    'postman-token': "ef9d5492-69df-084b-393d-2c32618dfb6e"
+    }
+
+response = requests.request("PUT", url, data=payload, headers=headers)
+
+print(response.text)
+
+//conductividad electrica
+
+import requests
+
+url = "http://molpe.eafit.edu.co:8080/Thingworx/Things/Cama1_pit/Properties/conductividadElectrica"
+
+payload = "{\n\t\"conductividadElectrica\": \"0.100256\"\n}"
+headers = {
+    'appkey': "89a96c8d-506f-470e-baa1-6beedde22406",
+    'content-type': "application/json",
+    'cache-control': "no-cache",
+    'postman-token': "97f9687e-8f23-45fc-c732-119eb861384f"
+    }
+
+response = requests.request("PUT", url, data=payload, headers=headers)
+
+print(response.text)
+
+//UV
+
+import requests
+
+url = "http://molpe.eafit.edu.co:8080/Thingworx/Things/Cama1_pit/Properties/UV"
+
+payload = "{\n\t\"UV\": \"29.36\"\n}"
+headers = {
+    'appkey': "89a96c8d-506f-470e-baa1-6beedde22406",
+    'content-type': "application/json",
+    'cache-control': "no-cache",
+    'postman-token': "b2ff1a23-51c5-6b4c-1393-ea95c933c30e"
+    }
+
+response = requests.request("PUT", url, data=payload, headers=headers)
+
+print(response.text)
+
+//Lumen
+
+import requests
+
+url = "http://molpe.eafit.edu.co:8080/Thingworx/Things/Cama1_pit/Properties/Lumen"
+
+payload = "{\n\t\"Lumen\": \"286\"\n}"
+headers = {
+    'appkey': "89a96c8d-506f-470e-baa1-6beedde22406",
+    'content-type': "application/json",
+    'cache-control': "no-cache",
+    'postman-token': "d62393ee-b928-3fe1-4b4f-4c399d29269f"
+    }
+
+response = requests.request("PUT", url, data=payload, headers=headers)
+
+print(response.text)
+
+//temperatura
+
+import requests
+
+url = "http://molpe.eafit.edu.co:8080/Thingworx/Things/Cama1_pit/Properties/Temperatura"
+
+payload = "{\n\t\"Temperatura\": \"21\"\n}"
+headers = {
+    'appkey': "89a96c8d-506f-470e-baa1-6beedde22406",
+    'content-type': "application/json",
+    'cache-control': "no-cache",
+    'postman-token': "ec553149-2f31-91e8-c6b5-48f5ba6d7d24"
+    }
+
+response = requests.request("PUT", url, data=payload, headers=headers)
+
+print(response.text)
+
+//humedad ambiente
+
+import requests
+
+url = "http://molpe.eafit.edu.co:8080/Thingworx/Things/Cama1_pit/Properties/HumedadAmbiente"
+
+payload = "{\n\t\"HumedadAmbiente\": \"80\"\n}"
+headers = {
+    'appkey': "89a96c8d-506f-470e-baa1-6beedde22406",
+    'content-type': "application/json",
+    'cache-control': "no-cache",
+    'postman-token': "dfe94a17-6f20-cd50-a929-81a3ddbfb349"
+    }
+
+response = requests.request("PUT", url, data=payload, headers=headers)
+
+print(response.text)
+
+//precipitacion
+
+import requests
+
+url = "http://molpe.eafit.edu.co:8080/Thingworx/Things/Cama1_pit/Properties/Precipitacion"
+
+payload = "{\n\t\"Precipitacion\": \"No\"\n}"
+headers = {
+    'appkey': "89a96c8d-506f-470e-baa1-6beedde22406",
+    'content-type': "application/json",
+    'cache-control': "no-cache",
+    'postman-token': "86f2af36-5955-0116-214c-5375692b7745"
+    }
+
+response = requests.request("PUT", url, data=payload, headers=headers)
+
+print(response.text)
