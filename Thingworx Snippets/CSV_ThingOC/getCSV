@@ -1,0 +1,18 @@
+//Leer CSV del repositorio:
+
+var params = {
+	path: "historial4.csv" /* STRING */,
+	columnMappings: "UV;DireccionViento;VelocidadViento;esAmenaza;ceAmenaza;phAmenaza;Lumen;ph;HumedadAmbiente;Temperatura;Precipitacion;conductividadElectrica;id" /* STRING */,
+	hasHeader: "false" /* BOOLEAN */,
+	longitudeField: undefined /* NUMBER */,
+	dateFormat: undefined /* STRING */,
+	fileRepository: "OracleCropsFileRepo_pit" /* THINGNAME */,
+	latitudeField: undefined /* NUMBER */,
+	fieldDelimiter: "," /* STRING */,
+	stringDelimiter: undefined /* STRING */,
+	dataShape: "OracleCropsDataShape_pit" /* DATASHAPENAME */
+};
+
+// result: INFOTABLE
+var result = Resources["CSVParserFunctions"].ReadCSVFile(params);
+
